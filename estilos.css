@@ -1,0 +1,19 @@
+.quienesSomos{
+    background-color: #212529;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 30px;
+}
+.articulo{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 30px;
+    padding-left: 50px;
+}
+
+.footer{
+    background-color: #212529;
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+}
