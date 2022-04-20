@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Navegacion con tabs</title>
+	<link rel="stylesheet" href="estilos.css">
+	<link rel="stylesheet" href="font-awesome.css">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="main.js"></script>
+</head>
+<body>
+	<div class="wrap">
+		<ul class="tabs">
+			<li><a href="#tab1"><span class="fa fa-home"></span><span class="tab-text">Publicar</span></a></li>
+			<li><a href="#tab2"><span class="fa fa-group"></span><span class="tab-text">Mis compras</span></a></li>
+			<li><a href="#tab3"><span class="fa fa-briefcase"></span><span class="tab-text">Mis ventas</span></a></li>
+			<li><a href="#tab4"><span class="fa fa-bookmark"></span><span class="tab-text">Perfil</span></a></li>
+		</ul>
+
+
+		
+<!--TABLA DE PUBLICACION-->
+		<div class="secciones">
+			<article id="tab1">
+				<div class="container">
+					<form action="#">
+					<div class="row g-5">
+						
+						<div class="col-xs-12 col-md-6 " >
+							 <h1>Formulario</h1>
+							 <style>
+								<link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
+
+								<link rel="stylesheet" href="./main.css" />
+								 .form-file_action input{
+									 width: 0;
+									 height: 0;
+									 opacity: 0;
+									 display: none;
+								 }
+								 .form-file_result{
+									 cursor: pointer;
+									 overflow: hidden;
+									 position: relative;
+									 width: 100%;
+									 height: 250px;
+									 background-color: aliceblue;
+									 border-radius: 8px;
+									 border: 1px dashed #609dd6;
+									 transition: bacgroundcolor 0.3s linear;
+									 z-index: 10;
+								 }
+								 .form-file_result::after{
+									 content: 'click para elegir la imagen';
+									 position: absolute;
+									 top: 0;
+									 bottom: 0;
+									 right: 0;
+									 left: 0;
+									 height: 100%;
+									 width: 100%;
+									 color: #609dd6;
+									 display: flex;
+									 justify-content: center;
+									 align-items: center;
+									 z-index: 100;
+								 }
+								 .form-file_result img{
+									 position: relative;
+									 width: 100%;
+									 height: 100%;
+									 object-fit: cover;
+									 z-index: 500;
+								 }
+							 </style>
+							 <label for="txt_nombre">Nombre</label><br>
+
+							 <input type="text" class="form-control" name="txt_nombre" id="txt_nombre" placeholder="Ingrese nombre"><br>
+							 <label for="txa_descripcion">Descripcion</label><br>
+							 <textarea name="Descripcion" id="txa_descripcion" cols="30" rows="10">Descripcion</textarea><br>
+							 <label for="txt_Precio">Precio</label><br>
+							 <input type="text" class="form-control" name="txt_Precio" id="txt_Precio" placeholder="$"><br>
+							 <label for="calendario">Fecha de ingreso</label><br>
+							 <input type="date" class="form-control"><br><br>
+							 <div class="form-file">
+								<div class="form-file__action">
+									<label for="image" class="title">Foto de publicación</label>
+		
+									<input type="file" name="image" id="image" />
+								</div>
+								<div class="form-file__result" id="result-image">
+									<img id="img-result" alt="" />
+								</div>
+							</div>
+		
+							<div class="form-group">
+								<button type="submit" class="form-button">Publicar</button><br> <br>
+							</div> 
+						</form>
+					</section>
+				</main>
+		
+				<script src="./main.js"></script>          
+						<div class="col-12 ">
+							
+							<button class="btn btn-primary" type="reset">Limpiar</button>
+						</div>        
+					</div>
+				</form>
+				 </div>
+			
+				
+			
+				<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+			
+				</article>
+				<!--TABLA COMPRAS-->
+			<article id="tab2">
+				<style>
+					*{margin: 0;padding: 0;box-sizing: border-box;font-family: sans-serif;}
+					.capa{
+						width: 100%;
+						height: 100%;
+						position: absolute;
+						
+					}
+					.parrafo{
+						z-index: 1;
+						width: 540px;
+						height: 440px;
+						padding: 20px 20px;
+						font-size: 15px;
+						line-height: 1.5;
+						box-shadow: 1px 5px 25px
+						rgba(0,0,0,0.45);
+						border-radius: 5px;
+					}
+					.parrafo img{
+						width: 310px;
+						border-radius: 5px;
+						float: left;
+					}
+				</style>
+				
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<h2 id="titulo">La creacion de adan</h2>
+							 <hr> <br><br>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+				   <div class="row">
+						<div class="col">
+							<img src="fotos/foto venta.jpg" alt="">
+						</div>
+						<div class="col">
+							<h3>Informacion de la compra</h3>
+							<table class="table">                   
+								<tbody>
+									<tr>
+									   <td>Nombre:</td>
+									   <td>La creacion de adan</td>
+									</tr>
+								  <tr>                        
+									<td>año de creacion: </td>
+									<td>Año 1511</td>                        
+								  </tr>
+								  <tr>                        
+									<td>Precio compra: </td>
+									<td>$1.000.000</td>                        
+								  </tr> 
+								  <tr>                        
+									<td>Creador: </td>
+									<td>Miguel Angel</td>                        
+								  </tr> 
+								  <tr>                        
+									<td>Tamaño: </td>
+									<td>280x570</td>                        
+								  </tr>                     
+								</tbody>
+							  </table>
+						</div>
+				   </div>
+				</div>
+				<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<br><br>
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<h2 id="titulo">David</h2>
+							 <hr> <br><br>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+				   <div class="row">
+						<div class="col">
+							<img src="fotos/david.jpg" alt="">
+						</div>
+						<div class="col">
+							<h3>Informacion de la compra</h3>
+							<table class="table">                   
+								<tbody>
+									<tr>
+									   <td>Nombre: </td>
+									   <td>David</td>
+									</tr>
+								  <tr>                        
+									<td>Año de creacion: </td>
+									<td> entre 1501 y 1504</td>                        
+								  </tr>
+								  <tr>                        
+									<td>Precio de compra: </td>
+									<td>$2.500.000</td>                        
+								  </tr> 
+								  <tr>                        
+									<td>Creador</td>
+									<td>Miguel Angel</td>                        
+								  </tr> 
+								  <tr>                        
+									<td>Tamaño</td>
+									<td>5,17M</td>                        
+								  </tr>                     
+								</tbody>
+							  </table>
+							   <br>
+						
+						</div>
+				   </div>
+				</div>
+				<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+						
+			</article>
+			<!--TABLA DE VENTAS-->
+			<article id="tab3">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<h2 id="titulo">Mona lisa</h2>
+							 <hr> <br><br>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+				   <div class="row">
+						<div class="col">
+							<img src="fotos/Mona lisa.jpg" alt="">
+						</div>
+						<div class="col">
+							<h3>Informacion de la venta</h3>
+							<table class="table">                   
+								<tbody>
+									<tr>
+									   <td>Nombre:</td>
+									   <td>Mona lisa</td>
+									</tr>
+								  <tr>                        
+									<td>año de creacion: </td>
+									<td>Año 1503</td>                        
+								  </tr>
+								  <tr>                        
+									<td>Precio compra: </td>
+									<td>$10.000.000</td>                        
+								  </tr> 
+								  <tr>                        
+									<td>Creador: </td>
+									<td>Leonardo Da Vinci</td>                        
+								  </tr> 
+								  <tr>                        
+									<td>Tamaño: </td>
+									<td>73x53 cm</td>                        
+								  </tr>                     
+								</tbody>
+							  </table>
+						</div>
+				   </div>
+				</div>
+				<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<br><br>
+				</article>
+
+
+				<!--TABLA DE VENTAS-->
+				<article id="tab3">
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<h2 id="titulo">El grito</h2>
+								 <hr> <br><br>
+							</div>
+						</div>
+					</div>
+					<div class="container">
+					   <div class="row">
+							<div class="col">
+								<img src="fotos/el grito.jpg" alt="">
+							</div>
+							<div class="col">
+								<h3>Informacion de la venta</h3>
+								<table class="table">                   
+									<tbody>
+										<tr>
+										   <td>Nombre:</td>
+										   <td>El grito</td>
+										</tr>
+									  <tr>                        
+										<td>año de creacion: </td>
+										<td>Año 1893</td>                        
+									  </tr>
+									  <tr>                        
+										<td>Precio compra: </td>
+										<td>$15.000.000</td>                        
+									  </tr> 
+									  <tr>                        
+										<td>Creador: </td>
+										<td>Edvard Munch</td>                        
+									  </tr> 
+									  <tr>                        
+										<td>Tamaño: </td>
+										<td>91x574 cm</td>                        
+									  </tr> 
+									  <tr>
+										  <td>Tecnica: </td>
+										  <td> Óleo, temple y pastel sobre cartón</td>
+									  </tr>  
+									  <tr>
+										<td>Estilo: </td>
+										<td>Expresionismo</td>
+										<tr>
+											<td>Vendedor </td>
+											<td>Lionel Messi</td>
+										</tr>  
+									</tr>                    
+									</tbody>
+								  </table>
+							</div>
+					   </div>
+					</div>
+					<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<br><br>
+					</article>
+
+
+
+					<!--TABLA PERFIL DEL USUARIO-->
+			<article id="tab4">
+				<style>
+					.header{
+						text-align: center;
+						height: 300px;
+						padding: 12px;
+						background-image: url(fotos/images.jpg);
+					}
+					.avatar{
+						width: 200px;
+						height: 200px;
+						border-radius: 50%;
+
+					}
+					.user-name{
+						color: white;
+						font-size: 18px;
+						margin-top: 14px;
+					}
+					.socials{
+						list-style: none;
+						text-align: center;
+						padding: 0;
+						
+					}
+					.socials li{
+						display: inline-block;
+						margin: 5px;
+					}
+					a{
+						text-decoration: none;
+						color: blue;
+					}
+					a:hover{
+						color: red;
+					}
+					.icon{
+						width: 16px;
+						height: 16px;
+						display: inline-block;
+						background-size: cover;
+					}
+					.email{
+						background-image: url(fotos/external-gmail-social-media-justicon-flat-justicon.png);
+					}
+					.facebook{
+						background-image: url(fotos/facebook.png);
+					}
+					.about{
+						padding: 10px;
+					}
+					.about h3{
+						color: gray;
+						font-size: 14px;
+					}
+					.about p{
+						color: gray;
+						font-size: 14px;
+					}
+
+				</style>
+				<div class="header">
+					
+					<img class="avatar" src="fotos/phto.png" alt="">
+					<h1 class="user-name">LIONEL MESSI</h1>
+				</div>
+				<ul class="socials">
+					<li>
+						<i class="icon email"></i>
+						<a href="mailito:lioMessi@gmail.com">lioMessi@gmail.com</a>
+					</li>
+					<li>
+						<i class="icon facebook"></i>
+						<a href="https://es-la.facebook.com/login/device-based/regular/login/">LioMessi</a>
+					</li>
+				</ul>
+				<div class="about">
+					<h3>Acerca de</h3>
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur nesciunt, maiores fugiat fuga, provident vero deleniti rerum earum voluptas blanditiis aut illo dolor. Nesciunt atque aliquam nisi animi dignissimos architecto.
+
+					</p>
+			</article>
+		</div>
+	</div>
+</body>
+</html>
