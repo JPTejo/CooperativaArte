@@ -1,0 +1,14 @@
+body{
+    background-color: lightblue;
+}
+
+.footer{
+    background-color: #212529;
+    color: white;
+    text-align: center;
+}
+
+.d-flex img{
+    width: 25rem;
+    margin: auto;
+}
